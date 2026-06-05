@@ -1,0 +1,2084 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Future Talent Development Project 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--blue:#5B8DEF;
+--green:#5FAE9D;
+--purple:#8F84E8;
+
+--dark:#0f172a;
+
+--text:#1e293b;
+
+--muted:#64748b;
+
+--border:#e8edf5;
+
+--white:#ffffff;
+
+}
+
+/* ========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+color:var(--text);
+
+overflow-x:hidden;
+
+background:
+
+radial-gradient(
+circle at top right,
+rgba(91,141,239,.08),
+transparent 35%
+),
+
+radial-gradient(
+circle at bottom left,
+rgba(95,174,157,.06),
+transparent 30%
+),
+
+#ffffff;
+
+}
+
+/* ========================= */
+
+.container{
+
+width:min(92%,1280px);
+
+margin:auto;
+
+}
+
+/* ========================= */
+
+section{
+
+position:relative;
+
+padding:120px 0;
+
+}
+
+.section-number{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+font-size:150px;
+
+font-weight:900;
+
+opacity:.04;
+
+line-height:1;
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+.glass{
+
+background:
+rgba(255,255,255,.78);
+
+backdrop-filter:
+blur(24px);
+
+border:
+1px solid rgba(255,255,255,.7);
+
+box-shadow:
+
+0 30px 80px
+rgba(15,23,42,.08);
+
+}
+
+/* ========================= */
+
+h2{
+
+font-size:clamp(
+2.5rem,
+4vw,
+4rem
+);
+
+font-weight:800;
+
+line-height:1.05;
+
+margin-bottom:20px;
+
+letter-spacing:-2px;
+
+}
+
+p{
+
+color:var(--muted);
+
+line-height:1.8;
+
+}
+
+/* ========================= */
+/* NAV */
+/* ========================= */
+
+.nav{
+
+position:fixed;
+
+top:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+z-index:999;
+
+padding:15px 25px;
+
+border-radius:100px;
+
+}
+
+.nav ul{
+
+display:flex;
+
+gap:25px;
+
+list-style:none;
+
+}
+
+.nav a{
+
+text-decoration:none;
+
+color:var(--text);
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:800px;
+height:800px;
+
+background:
+
+radial-gradient(
+circle,
+rgba(91,141,239,.18),
+transparent
+);
+
+top:-250px;
+right:-150px;
+
+filter:blur(60px);
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:
+
+radial-gradient(
+circle,
+rgba(95,174,157,.12),
+transparent
+);
+
+bottom:-250px;
+left:-150px;
+
+filter:blur(60px);
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:
+1.1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.eyebrow{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#eef4ff;
+
+color:var(--blue);
+
+border-radius:999px;
+
+font-weight:700;
+
+font-size:13px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:clamp(
+4rem,
+8vw,
+8rem
+);
+
+font-weight:900;
+
+line-height:.92;
+
+letter-spacing:-5px;
+
+margin-bottom:25px;
+
+}
+
+.hero-sub{
+
+font-size:22px;
+
+max-width:650px;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:16px 28px;
+
+border-radius:14px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn-primary{
+
+background:var(--blue);
+
+color:white;
+
+}
+
+.btn-secondary{
+
+background:white;
+
+color:var(--text);
+
+border:1px solid var(--border);
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.hero-visual{
+
+height:700px;
+
+border-radius:40px;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.hero-visual img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+}
+
+.floating-card{
+
+position:absolute;
+
+right:30px;
+
+bottom:30px;
+
+padding:20px;
+
+border-radius:20px;
+
+max-width:280px;
+
+}
+
+/* ========================= */
+/* WHY */
+/* ========================= */
+
+.cards-4{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:25px;
+
+margin-top:60px;
+
+}
+
+.feature-card{
+
+    padding:25px;
+
+    border-radius:28px;
+
+    transition:.4s;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card h3{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.feature-card img{
+
+    width:100%;
+
+   
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    margin-bottom:15px;
+
+    display:block;
+
+}
+
+/* ========================= */
+/* JOURNEY */
+/* ========================= */
+
+.journey-wrap{
+
+margin-top:80px;
+
+position:relative;
+
+}
+
+.journey-line{
+
+height:4px;
+
+background:
+
+linear-gradient(
+90deg,
+var(--blue),
+var(--green),
+var(--purple)
+);
+
+}
+
+.journey-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:30px;
+
+margin-top:-20px;
+
+}
+
+.step{
+
+text-align:center;
+
+}
+
+.dot{
+
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+background:white;
+
+margin:auto;
+
+border:4px solid var(--blue);
+
+box-shadow:
+
+0 0 25px
+rgba(91,141,239,.3);
+
+}
+
+.step-card{
+
+padding:25px;
+
+margin-top:25px;
+
+border-radius:24px;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cards-4{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.journey-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-visual{
+
+height:500px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cards-4{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero h1{
+
+letter-spacing:-2px;
+
+}
+
+}
+
+/* ===================================== */
+/* SPLIT SECTION */
+/* ===================================== */
+
+.split-layout{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.image-block{
+
+border-radius:32px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 40px 100px
+rgba(15,23,42,.12);
+
+}
+
+.image-block img{
+
+width:100%;
+height:100%;
+
+display:block;
+
+object-fit:cover;
+
+}
+
+.tag{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#eef4ff;
+
+border-radius:999px;
+
+color:var(--blue);
+
+font-size:13px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.lead{
+
+font-size:18px;
+
+margin-bottom:35px;
+
+}
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+.info-box{
+
+padding:25px;
+
+border-radius:24px;
+
+}
+
+.info-box h3{
+
+margin-bottom:10px;
+
+}
+
+.markets-section{
+
+background:#111827;
+
+padding-top:0;
+
+}
+
+.white-center{
+
+text-align:center;
+
+color:white;
+
+margin-bottom:60px;
+
+}
+
+.market-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.market-card{
+
+background:
+
+rgba(255,255,255,.06);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+border-radius:28px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.market-card:hover{
+
+transform:
+translateY(-10px);
+
+}
+
+.market-card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.market-card h3{
+
+color:white;
+
+padding:25px 25px 10px;
+
+}
+
+.market-card p{
+
+padding:0 25px 25px;
+
+color:#cbd5e1;
+
+}
+
+.masonry{
+
+column-count:3;
+
+column-gap:20px;
+
+margin-top:60px;
+
+}
+
+.masonry img{
+
+width:100%;
+
+margin-bottom:20px;
+
+border-radius:24px;
+
+break-inside:avoid;
+
+box-shadow:
+
+0 20px 50px
+rgba(15,23,42,.12);
+
+transition:.4s;
+
+}
+
+.masonry img:hover{
+
+transform:scale(1.02);
+
+}
+
+.creator-hero{
+    height:200px;
+    overflow:hidden;
+    border-radius:32px;
+}
+
+.creator-hero img{
+    width:40%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ===================================== */
+/* QUALIFICATION */
+/* ===================================== */
+
+.qualification-wrap{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.qualification-image{
+
+border-radius:32px;
+
+overflow:hidden;
+
+box-shadow:
+0 40px 80px
+rgba(15,23,42,.12);
+
+}
+
+.qualification-image img{
+
+width:100%;
+display:block;
+
+}
+
+.qualification-roadmap{
+
+margin-top:40px;
+
+}
+
+.road-item{
+
+padding:20px 25px;
+
+border-radius:18px;
+
+background:#f8fbff;
+
+border:1px solid #e6edf7;
+
+font-weight:700;
+
+}
+
+.road-arrow{
+
+text-align:center;
+
+font-size:30px;
+
+padding:12px 0;
+
+color:var(--blue);
+
+}
+
+/* ===================================== */
+/* ACCELERATOR */
+/* ===================================== */
+
+.accelerator-section{
+
+background:
+
+linear-gradient(
+180deg,
+#ffffff,
+#f7faff
+);
+
+}
+
+.accelerator-header{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.accelerator-tag{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#eef4ff;
+
+color:var(--blue);
+
+border-radius:999px;
+
+margin-bottom:20px;
+
+font-size:13px;
+
+font-weight:700;
+
+}
+
+.accelerator-hero{
+
+border-radius:32px;
+
+overflow:hidden;
+
+box-shadow:
+0 40px 100px
+rgba(15,23,42,.12);
+
+margin-bottom:60px;
+
+}
+
+.accelerator-hero img{
+
+width:100%;
+display:block;
+
+}
+
+.skill-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+}
+
+.skill-card{
+
+padding:35px;
+
+border-radius:24px;
+
+background:white;
+
+box-shadow:
+0 20px 40px
+rgba(15,23,42,.08);
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.skill-card:hover{
+
+transform:
+translateY(-8px);
+
+}
+
+.support-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(6,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.support-card{
+
+padding:25px;
+
+text-align:center;
+
+border-radius:20px;
+
+background:#fff;
+
+border:1px solid #eef2f7;
+
+font-weight:700;
+
+}
+
+.award-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.award-card{
+
+padding:40px;
+
+background:white;
+
+border-radius:32px;
+
+text-align:center;
+
+box-shadow:
+0 30px 80px
+rgba(15,23,42,.08);
+
+transition:.4s;
+
+}
+
+.award-card:hover{
+
+transform:
+translateY(-12px);
+
+}
+
+.award-card img{
+
+width:100%;
+
+max-width:250px;
+
+margin:auto;
+
+display:block;
+
+}
+
+.featured{
+
+transform:scale(1.04);
+
+}
+
+.final-cta{
+
+position:relative;
+
+height:100vh;
+
+overflow:hidden;
+
+}
+
+.final-cta img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+position:absolute;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+180deg,
+rgba(15,23,42,.2),
+rgba(15,23,42,.75)
+);
+
+z-index:1;
+
+}
+
+.cta-content{
+
+position:absolute;
+
+z-index:2;
+
+top:50%;
+
+left:50%;
+
+transform:
+translate(-50%,-50%);
+
+text-align:center;
+
+color:white;
+
+}
+
+.cta-content h2{
+
+font-size:
+clamp(4rem,8vw,8rem);
+
+color:white;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- ===================== -->
+<!-- NAV -->
+<!-- ===================== -->
+
+<nav class="nav glass">
+
+<ul>
+
+<li><a href="#why">Why</a></li>
+
+<li><a href="#journey">Journey</a></li>
+
+<li><a href="#discovery">Discovery</a></li>
+
+<li><a href="#creator">Creator Lab</a></li>
+
+<li><a href="#accelerator">Accelerator</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">
+Future Talent Development Project 2026
+</span>
+
+<h1>
+
+Discover<br>
+Create<br>
+Grow
+
+</h1>
+
+<p class="hero-sub">
+
+AI × Creator × Business × Finance
+<BR>
+培育未來金融創作者，
+建立未來職涯競爭力。
+
+</P>
+
+<div class="hero-buttons">
+
+<a href="#journey" class="btn btn-primary">
+Explore Journey
+</a>
+
+<a href="https://forms.gle/sKBCZDxZcHo5j3aG7" class="btn btn-primary">
+Apply Now
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-visual glass">
+
+<img
+src="images/hero.jpg"
+alt="IMG: Future Talent Hero Banner">
+
+<div class="floating-card glass">
+
+<h3>Experience • Learn • Grow</h3>
+
+<p>
+從探索未來，
+到建立未來。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- WHY FUTURE TALENT -->
+<!-- ===================== -->
+
+<section id="why">
+
+<div class="container">
+
+<div class="section-number">
+01
+</div>
+
+<h2>
+Why Future Talent
+</h2>
+
+<h2>
+未來人才的重要性
+</h2>
+
+<p>
+未來不只是選擇一份工作，
+而是建立屬個人價值的可能性。
+</p>
+
+<div class="cards-4">
+
+<div class="feature-card glass">
+
+    <img src="images/ai_future_skill.jpg" alt="AI Future Skill">
+
+    <h3>AI</h3>
+
+    <p>
+        未來智慧  
+    </p>
+
+</div>
+
+<div class="feature-card glass">
+
+    <img src="images/Content_Creation.jpg" alt="Content_Creation">
+
+    <h3>Creator</h3>
+
+    <p>
+        內容創造
+    </p>
+
+</div>
+
+<div class="feature-card glass">
+<img src="images/Business_Thinking.jpg" alt="Business Thinking">
+
+<h3>Business</h3>
+
+<p>
+商業思維
+</p>
+
+</div>
+
+<div class="feature-card glass">
+<img src="images/Financial_Literacy.jpg" alt="Financial Literacy">
+<h3>Finance</h3>
+
+<p>
+金融認知
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- JOURNEY -->
+<!-- ===================== -->
+
+<section id="journey">
+
+<div class="container">
+
+<div class="section-number">
+02
+</div>
+
+<h2>
+The Future Talent Journey
+</h2>
+<h2>
+未來人才的旅程
+</h2>
+
+<div class="journey-wrap">
+
+<div class="journey-line"></div>
+
+<div class="journey-grid">
+
+<div class="step">
+
+<div class="dot"></div>
+
+<div class="feature-card glass">
+<img src="images/Career_Discovery.jpg" alt="Career Discovery">
+<h3>
+Career Discovery
+</h3>
+<h4>
+職涯探索
+</h4>
+
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="dot"></div>
+
+<div class="feature-card glass">
+<img src="images/Future_Creator_Lab.jpg" alt="Future Creator Lab">
+
+<h3>
+Future Creator Lab
+</h3>
+
+<h4>
+12小時實戰挑戰
+</h4>
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="dot"></div>
+
+<div class="feature-card glass">
+<img src="images/IIQE_Training.jpg" alt="IIQE Training">
+
+<h3>
+Professional Training
+</h3>
+
+<h4>
+專業培訓
+</h4>
+
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="dot"></div>
+
+<div class="feature-card glass">
+<img src="images/Future_Career_Accelerator.jpg" alt="Future Career Accelerator">
+
+
+<h3>
+Future Career Accelerator
+</h3>
+<h4>
+90 Days 職涯加速器</h4>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- CAREER DISCOVERY -->
+<!-- ===================================== -->
+
+<section id="discovery">
+
+<div class="container">
+
+<div class="section-number">
+03
+</div>
+
+<div class="split-layout">
+
+<div class="image-block">
+
+<img
+src="images/discovery-hero.jpg"
+alt="Career Discovery Workshop Hero">
+
+</div>
+
+<div class="content-block">
+
+<span class="tag">
+DISCOVER
+</span>
+
+<h2>
+Career Discovery
+</h2>
+
+<p class="lead">
+
+探索未來趨勢，
+了解 AI、Creator Economy、
+Business 及 Financial Industry 的發展方向。
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-box glass">
+
+<h3>AI Era</h3>
+
+<p>
+了解 AI 如何改變工作模式及未來職涯發展。
+</p>
+
+</div>
+
+<div class="info-box glass">
+
+<h3>Creator Economy</h3>
+
+<p>
+探索內容創作如何成為未來收入來源。
+</p>
+
+</div>
+
+<div class="info-box glass">
+
+<h3>Personal Branding</h3>
+
+<p>
+建立個人品牌與影響力。
+</p>
+
+</div>
+
+<div class="info-box glass">
+
+<h3>Future Income</h3>
+
+<p>
+認識未來多元收入模式。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- FUTURE CREATOR LAB -->
+<!-- ===================================== -->
+
+<section id="creator-section">
+
+<div class="container">
+
+<div class="section-number">
+04
+</div>
+
+<div class="split-layout">
+
+<div class="image-block">
+
+<img
+src="images/creator-lab-hero.jpg"
+alt="IMG: Future Creator Lab">
+
+</div>
+
+<div class="content-block">
+
+<span class="tag">
+CREATE
+</span>
+
+<h2>
+Future Creator Lab
+</h2>
+
+<p class="lead">
+
+Learn By Doing  12小時實戰挑戰
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-box glass">
+
+<h3>Build Day</h3>
+
+<p>
+建立內容方向與市場策略
+</p>
+
+</div>
+
+<div class="info-box glass">
+
+<h3>Challenge Week</h3>
+
+<p>
+內容創作與市場測試
+</p>
+
+</div>
+
+<div class="info-box glass">
+
+<h3>Challenge Day</h3>
+
+<p>
+成果展示與團隊簡報
+</p>
+
+</div>
+
+<div class="info-box glass">
+
+<h3>Review Check</h3>
+
+<p>
+檢視成果與團隊討論
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===================================== -->
+<!-- THREE MARKETS -->
+<!-- ===================================== -->
+
+<section class="markets-section">
+
+<div class="container">
+<BR></BR>
+<h2 class="white-center">
+
+Three Challenge Markets
+
+</h2>
+<h3 class="white-center">
+
+三個核心領域巿場
+
+</h3>
+
+<div class="market-grid">
+
+<div class="market-card">
+
+<img
+src="images/market-parent.jpg"
+alt="IMG: Parents Market">
+
+<h3>
+Parents Market
+</h3>
+
+<p>
+家庭及教育市場
+</p>
+
+</div>
+
+<div class="market-card">
+
+<img
+src="images/market-property.jpg"
+alt="IMG: Property and Finance Market">
+
+<h3>
+Property & Finance
+</h3>
+
+<p>
+物業與金融市場
+</p>
+
+</div>
+
+<div class="market-card">
+
+<img
+src="images/market-silver.jpg"
+alt="IMG: Silver Market">
+
+<h3>
+Silver Market
+</h3>
+
+<p>
+退休及銀髮市場
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- ACTIVITY SHOWCASE -->
+<!-- ===================================== -->
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="section-number">
+05
+</div>
+
+<h2>
+
+Learn By Doing
+
+</h2>
+
+<p>
+
+Real Experience · Real Challenge · Real Growth
+
+</p>
+
+<div class="masonry">
+
+<img src="images/gallery-01.jpg" alt="IMG: Team Discussion">
+
+<img src="images/gallery-02.jpg" alt="IMG: Content Creation">
+
+<img src="images/gallery-03.jpg" alt="IMG: Presentation">
+
+<img src="images/gallery-04.jpg" alt="IMG: Mentor Feedback">
+
+<img src="images/gallery-05.jpg" alt="IMG: Workshop">
+
+<img src="images/gallery-06.jpg" alt="IMG: Challenge Day">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- PROFESSIONAL QUALIFICATION -->
+<!-- ===================================== -->
+
+<section id="qualification">
+
+<div class="container">
+
+<div class="section-number">
+06
+</div>
+
+<div class="qualification-wrap">
+
+<div class="qualification-image">
+
+<img
+src="images/iiqe-training.jpg"
+alt="IMG: Intensive Training">
+
+</div>
+
+<div class="qualification-content">
+
+<span class="tag">
+PROFESSIONAL
+</span>
+
+<h2>
+Professional Qualification Pathway
+</h2>
+
+<p class="lead">
+
+完成 Future Creator Lab 後，
+學員可參與免費 IIQE 精讀班，
+為未來專業發展做好準備。
+
+</p>
+
+<div class="qualification-roadmap">
+
+<div class="road-item">
+Future Creator Lab
+</div>
+
+<div class="road-arrow">
+↓
+</div>
+
+<div class="road-item">
+IIQE Trainning & Exam
+</div>
+
+<div class="road-arrow">
+↓
+</div>
+
+<div class="road-item">
+Future Career Accelerator
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===================================== -->
+<!-- FUTURE CAREER ACCELERATOR -->
+<!-- ===================================== -->
+
+<section id="accelerator" class="accelerator-section">
+
+<div class="container">
+
+<div class="section-number accelerator-number">
+07
+</div>
+
+<div class="accelerator-header">
+
+<span class="accelerator-tag">
+GROW
+</span>
+
+<h2>
+Future Career Accelerator
+</h2>
+
+<p>
+
+90-Day Growth Experience
+
+</p>
+
+</div>
+
+<div class="accelerator-hero">
+
+<img
+src="images/accelerator-hero.jpg"
+alt="IMG: Future Career Accelerator Hero">
+
+</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+Content Creation
+內容創作
+</div>
+
+<div class="skill-card">
+Personal Branding
+個人品牌
+</div>
+
+<div class="skill-card">
+Business Development
+商業發展
+</div>
+
+<div class="skill-card">
+Financial Literacy
+金融認知
+</div>
+
+<div class="skill-card">
+Leadership
+領導能力
+</div>
+
+<div class="skill-card">
+Team Building 團隊文化
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="support-system">
+
+<div class="container">
+
+<h2>
+Support System
+</h2>
+
+<h2>
+同行支援系統
+</h2>
+
+<div class="support-grid">
+
+<div class="support-card">
+Buddy 伙伴
+</div>
+
+<div class="support-card">
+Mentor 導師
+</div>
+
+<div class="support-card">
+Workshop 工作坊
+</div>
+
+<div class="support-card">
+Coaching 引導
+</div>
+
+<div class="support-card">
+Review 檢視
+</div>
+
+<div class="support-card">
+Gathering 聚會
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- RECOGNITION -->
+<!-- ===================================== -->
+
+<section id="awards">
+
+<div class="container">
+
+<div class="section-number">
+08
+</div>
+
+<h2>
+Recognition & Achievement
+</h2>
+
+<h2>
+認可與成就
+</h2>
+
+<div class="award-grid">
+
+<div class="award-card">
+
+<img
+src="images/award-ticket.jpg"
+alt="IMG: Completion Award Air Ticket">
+
+<h3>
+Completion Award
+</h3>
+
+<p>
+
+完成 90 日計劃
+
+</p>
+
+</div>
+
+<div class="award-card featured">
+
+<img
+src="images/award-iphone.jpg"
+alt="IMG: Internship Champion iPhone">
+
+<h3>
+Internship Champion
+</h3>
+
+<p>
+
+iPhone 17 Pro
+
+</p>
+
+</div>
+
+<div class="award-card">
+
+<img
+src="images/award-switch.jpg"
+alt="IMG: Social Media King">
+
+<h3>
+Social Media King
+</h3>
+
+<p>
+
+Nintendo Switch 2
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="career-path">
+
+<div class="container">
+
+<div class="section-number">
+09
+</div>
+
+<h2>
+Future Career Path
+</h2>
+
+<div class="pathway">
+
+<div>Student</div>
+
+<span>→</span>
+
+<div>Creator</div>
+
+<span>→</span>
+
+<div>Future Creator</div>
+
+<span>→</span>
+
+<div>Future Financial Creator</div>
+
+<span>→</span>
+
+<div>Team Leader</div>
+
+<span>→</span>
+
+<div>Future Partner</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="apply" class="final-cta">
+
+<div class="overlay"></div>
+
+<img
+src="images/graduation.jpg"
+alt="IMG: Graduation Ceremony">
+
+<div class="cta-content">
+
+<h2>
+
+Future Starts With Action
+
+</h2>
+
+<p>
+
+你的未來，由今天開始。
+
+</p>
+
+<a href="https://forms.gle/sKBCZDxZcHo5j3aG7" class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</section>
